@@ -35,3 +35,17 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+tasks.register('npmCi', Exec) {
+	workingDir = file('spa-sample')
+	commandLine 'npm', 'ci'
+	standardOutput = System.out
+	errorOutput = System.err
+}
+
+tasks.register('npmRunDev', Exec) {
+	workingDir = file('spa-sample')
+	commandLine 'npm', 'run', 'dev'
+	standardOutput = System.out
+	errorOutput = System.err
+}

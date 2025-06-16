@@ -8,7 +8,7 @@ To reproduce:
    - `./gradlew bootRun`
 2. Start the frontend
    - `./gradlew npmCi` - install NPM dependencies
-   - `./gradlew runDev` - start frontend app
+   - `./gradlew npmRunDev` - start frontend app
 3. Open the demo page at http://127.0.0.1:5173
    - Perform login 
       - Username: `user1`
